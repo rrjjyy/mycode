@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--controls 是设置播放的，autoplay是自动播放的，但是在谷歌上是无法禁用的，src是填写视频的路径，路径填写错误，不会报错，
+    但无法播放视频，因此写路径的时候一定要小心，一般使用相对路径，因为相对路径的移植性更好-->
+<!--    <video src="【狂神说Java】HTML5完整教学通俗易懂%20-%20HTML01：初识HTML.mp4" controls autoplay></video>-->
+<!--    &lt;!&ndash;音乐&ndash;&gt;-->
+<!--    <audio src="" controls></audio>-->
+
+<!--    <iframe src="https://www.baidu.com/ " frameborder="0"></iframe>-->
+<!--    <br>-->
+<!--    &lt;!&ndash;哔哩哔哩的iframe&ndash;&gt;-->
+<!--    <iframe src="//player.bilibili.com/player.html?aid=293713622&bvid=BV1GF411e7Ee&cid=428954962&page=1" scrolling="no"-->
+<!--            border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="1600px" height="900px" > </iframe>-->
+
+<!--    <form action="这里是表单所要填的地址" method="get">-->
+<!--        用户名：<input type="text">-->
+<!--        <br>-->
+<!--        密 码：<input type="password">-->
+<!--        <br>-->
+<!--        <p><input type="submit"> <input type="reset"></p>-->
+<!--        <br>-->
+<!--        <input type="time"  >-->
+
+<!--    </form>-->
+    <!--
+    value:表示的是文本框里面默认的值
+    maxlength:表示文本框里能填的最大字符的个数
+    size：表示的是文本框的长度
+    -->
+    <input type="text" value="renjaiyi6367" maxlength="8" size="20">
+    <!--
+    单选框标签
+    value:表示选中的值
+    name:表示组
+    注意：下面的例子中，组的内容应该保证一样，这样才能保证所提交的内容是唯一的
+    -->
+    <input type="radio" value="boy" name="sex">男
+    <input type="radio" value="girl" name="sex">女
+
+    <!--
+    name:name可以保持一致也可以不一样，但一般保持一致，便于传递
+    -->
+    <br>
+    <input type="checkbox" value="sing" name="hobby">唱
+    <input type="checkbox" value="jump" name="hobby">跳
+
+    <!--
+    按钮
+    <input type="button"> 普遍按钮
+    <input type="image">   图片按钮
+    <input type="submit">  提交按钮
+    <input type="reset">  重置按钮
+    -->
+<!--    <input type="button" name="button1" value="我是一个按钮">-->
+<!--    <input type="image" name="image1" src="">-->
+
+
+    <br>
+    <br>
+    <!--下拉框-->
+    地点：
+    <select name="haha" id="haha">
+        <option value="v1" disabled>成都</option>
+        <option value="v2" selected>乐山</option>
+        <option value="v3">绵阳</option>
+    </select>
+
+    <!--文本域-->
+    <textarea name="text" id="text" cols="30" rows="10" readonly disabled></textarea>
+
+    <!--文件域-->
+    <input type="file" name="file">
+
+    <!--邮箱-->
+    <input type="email" name="emial">
+
+    <!--URL-->
+    <input type="url" name="url">
+
+    <!--数字-->
+    <input type="number" name="number" max="100" min="0" step="2">
+
+    <!--滑块-->
+    <input type="range" name="滑块" max="100" min="0" step="1">
+
+    <!--搜索框-->
+    <input type="search">
+
+    <br>
+    <!--增强鼠标的可用性,for里面填标记的id-->
+
+    <label for="t">点我点我</label>
+    <br>
+    <input type="text" id="t">
+
+    <ol>
+        <li>12</li>
+        <li>12</li>
+        <li>12</li>
+    </ol>
+
+</body>
+
+</html>

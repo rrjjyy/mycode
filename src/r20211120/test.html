@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preload"
+          href="//at.alicdn.com/t/font_2952909_1eo7mbov20n.woff2" a
+          s="font" type="font/woff2" crossorigin="anonymous">
+
+    <!--
+    text-weight:字体粗细
+    text-indent:缩进
+    -->
+    <style>
+
+        @font-face {
+            font-family: 'iconfont';  /* Project id 2952909 */
+            src: url('//at.alicdn.com/t/font_2952909_1eo7mbov20n.woff2?t=1637394745204') format('woff2'),
+            url('//at.alicdn.com/t/font_2952909_1eo7mbov20n.woff?t=1637394745204') format('woff'),
+            url('//at.alicdn.com/t/font_2952909_1eo7mbov20n.ttf?t=1637394745204') format('truetype');
+        }
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        #nav{
+            width: 200px;
+            height: 400px;
+            background: gold;
+            border-radius: 5px;
+        }
+
+        h1{
+            font-size: 20px;
+            font-family: "Microsoft YaHei UI";
+            font-weight: bolder;
+            text-indent: 2em;
+            color: #4a77d4;
+            background-color: red;
+            border-radius: 5px;
+
+        }
+
+
+        ul li{
+            height: auto;
+            list-style: none;
+            text-indent: 2em;
+        }
+        /*
+        text-decoration:文本装饰，一般在a标签中设置为none
+        */
+        ul li a{
+            text-decoration: none;
+            color: black;
+            font-family: "微软雅黑 Light";
+        }
+
+        a:hover{
+            color: orange;
+        }
+
+        a:active{
+            color: green;
+        }
+        #id1{
+            color: black;
+            position: relative;
+            text-align: center;
+            display: block;
+            top: -19px;
+            left: 138px;
+            height: 0px;
+            width: 0px;
+            background-color: white;
+
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="nav">
+
+    <h1>分类
+        <a href="#"><span id="id1" class="iconfont">&#xe666;</span></a>
+
+    </h1>
+    <ul>
+        <li><a href="#">图书</a>&nbsp;&nbsp;<a href="#">音响</a>&nbsp;&nbsp;
+            <a href="#">影视</a></li>
+        <li><a href="#">零食</a>&nbsp;&nbsp;<a href="#">生鲜</a>&nbsp;&nbsp;
+            <a href="#">药品</a></li>
+    </ul>
+</div>
+
+<img src="img/箭头.png" alt="">
+
+
+</body>
+</html>

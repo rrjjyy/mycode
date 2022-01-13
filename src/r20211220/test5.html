@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .tudou {
+            position: relative;
+            height: 280px;
+            width: 520px;
+            background-color: #C850C0;
+            margin: auto;
+        }
+        .pic {
+            height: 100%;
+            width: 100%;
+        }
+        .mask{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(1,1,1,0.7);
+        }
+
+        .tudou:hover .mask{
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="tudou">
+    <div class="mask"></div>
+    <img class="pic" src="img/tb.jpg" alt="">
+
+</div>
+
+</body>
+</html>

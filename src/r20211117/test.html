@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--通过class定位
+    =表示绝对等于
+    *=表示包含
+    ^=表示以什么开头
+    $=表示以什么结尾
+    -->
+
+    <style>
+        /*只要class中包含有a的都染成红色*/
+        a[class*="a"]{
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+<a href="hahah" id="aaa" class="aaa">随便写的</a>
+<br>
+<a href="www" id="bbb" class="abbb">不知道写什么</a>
+</body>
+</html>

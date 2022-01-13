@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*body {*/
+        /*    background-color: rgb(235, 235, 235);*/
+        /*}*/
+        body{
+            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+        }
+
+        form {
+            width: 400px;
+            height: 320px;
+            background-color: #42374a;
+            padding: 20px;
+            box-sizing: border-box;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 0 0 10px;
+            color: #fdb101;
+        }
+
+        form input {
+            width: 100%;
+            height: 44px;
+            display: block;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            box-sizing: border-box;
+        }
+        input{
+            width: 278px;
+            height: 18px;
+            margin-bottom: 10px;
+            outline: none;
+            padding: 10px;
+            font-size: 13px;
+            color: #ffffff;
+            text-shadow:1px 1px 1px;
+            border-top: 1px solid #312E3D;
+            border-left: 1px solid #312E3D;
+            border-right: 1px solid #312E3D;
+            border-bottom: 1px solid #56536A;
+            border-radius: 4px;
+            background-color: #000000;
+        }
+
+        .mya {
+            width: 100%;
+            height: 30px;
+            /*margin-bottom: 20x;*/
+        }
+
+        .mya a:nth-child(1) {
+            float: left;
+        }
+
+        .mya a:nth-child(2) {
+            float: right;
+        }
+
+        button {
+            width: 100%;
+            height: 40px;
+            background-color: rgb(235, 235, 235);
+            border: none;
+        }
+        .but{
+            width: 361px;
+            min-height: 20px;
+            display: block;
+            background-color: #4a77d4;
+            border: 1px solid #3762bc;
+            color: #fff;
+            padding: 9px 14px;
+            font-size: 15px;
+            line-height: normal;
+            border-radius: 5px;
+            margin: 0;
+        }
+
+        button:active {
+            box-shadow: 0 0 3px #0072FE;
+            /* x偏移  y偏移  模糊值 颜色 */
+        }
+        button:hover{
+            border: #4a77d4;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<form action="">
+    <h2>登录界面</h2>
+    <input id="username" type="text" placeholder="账号">
+    <input id="password" type="text" placeholder="密码">
+    <div class="mya">
+        <a href="">忘记密码</a>
+        <a href="">注册</a>
+    </div>
+    <button id="login-btn" type="button" class="but">登录</button>
+</form>
+
+<!--
+    js引入方式：
+    1、写在body标签里面，通过script包起来
+    2、引入外部js文件  再通过script的src属性引入进来
+-->
+
+<script>
+    // let 定义一个变量
+    let username = document.getElementById('username')
+    let password = document.getElementById('password')
+    let loginBtn = document.getElementById('login-btn')
+    // js里面不允许出现 -
+
+    //一般的交互事件
+    // onclick 点击事件
+    // onmousemove  鼠标移入事件
+    // onmouseout  鼠标移出事件
+    // ondblclick  双击事件
+    // onfocus  input框获取焦点事件
+    // onblur  失焦事件
+
+
+    loginBtn.onclick = function() {
+        let usernamevalue = username.value
+        let passwordvalue = password.value
+        // console.log(usernamevalue, passwordvalue)
+        // 便于检查的时候判断是否成功
+        if (!usernamevalue) {
+            return alert('请输入正确的用户名')
+            //return 跳出当前函数，并且返回后面的值
+        }
+        console.log(usernamevalue, passwordvalue)
+
+    }
+</script>
+</body>
+
+</html>
